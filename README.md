@@ -2,6 +2,12 @@
 
 This reposirory is a project assignment for **University of Belgrade School of Electrical Engineering** masters course **Social Network Analysis (ASM)**. The full documentation is located in the [*doc/ASM_PZ2_1920.pdf*](doc/ASM_PZ2_1920.pdf) file.
 
+## Requirements
+Project is written in **Python 3.8.2** and uses the following modules:
+* [**xlrd**](https://xlrd.readthedocs.io/en/latest/) - for reading Excel files.
+* [**XlsxWriter**](https://xlsxwriter.readthedocs.io/) - for writing and creating Excel files.
+* [**NetworkX**](https://networkx.github.io/) - for creating and generating graphs.
+
 ## Goal
 
 The project assignment is quantitative and qualitative analysis of scientific production in the field of computer science at **University of Belgrade (UB)** at three most important faculties in that field (**ETF**, **MATF**, **FON**).
