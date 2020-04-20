@@ -1,6 +1,6 @@
 # Coauthorship Network Analysis
 
-This reposirory is a project assignment for **University of Belgrade School of Electrical Engineering** masters course **Social Network Analysis (ASM)**. The full documentation is located in the *doc* folder.
+This reposirory is a project assignment for **University of Belgrade School of Electrical Engineering** masters course **Social Network Analysis (ASM)**. The full documentation is located in the [*doc/ASM_PZ2_1920.pdf*](doc/ASM_PZ2_1920.pdf) file.
 
 ## Goal
 
