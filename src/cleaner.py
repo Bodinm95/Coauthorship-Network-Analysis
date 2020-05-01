@@ -130,22 +130,23 @@ def parse_authors(authors):
 
 def parse_line(line):
     # Check paper type
-    type = line[0]
-    if type not in PAPER_TYPES:
+    ptype = line[0]
+    if ptype not in PAPER_TYPES:
         return None
+
+    year = line[2]
+    title = line[3]
+    docname = line[5]
 
     # Parse main author
     main_author = parse_authors(re.sub("N/A", "", line[1]))
 
     # Parse authors
-    authors = parse_authors(line[2])
+    authors = parse_authors(line[4])
     if (authors.find(main_author) == -1):
         authors = (main_author + ", " + authors) if (authors != "") else (main_author)
 
-    year = line[3]
-    docname = line[4]
-
-    return [type, year, authors, docname]
+    return [ptype, year, title, authors, docname]
 
 def clean():
     print("Initializing author database: " + EXCEL_AUTHORS)
@@ -162,17 +163,19 @@ def clean():
     outrow = 1
 
     # Column header titles
-    outsheet.write(0, 0, sheet.cell_value(0, 5))
-    outsheet.write(0, 1, sheet.cell_value(0, 2))
-    outsheet.write(0, 2, sheet.cell_value(0, 3))
-    outsheet.write(0, 3, sheet.cell_value(0, 9))
+    outsheet.write(0, 0, sheet.cell_value(0, 5)) # Type
+    outsheet.write(0, 1, sheet.cell_value(0, 2)) # Year
+    outsheet.write(0, 2, sheet.cell_value(0, 1)) # Title
+    outsheet.write(0, 3, sheet.cell_value(0, 3)) # Authors
+    outsheet.write(0, 4, sheet.cell_value(0, 9)) # Document Name
 
     print("Cleaning...")
     for row in range(1, sheet.nrows):
         line = [sheet.cell_value(row, 5), # Type
                 sheet.cell_value(row, 0), # Main Author
-                sheet.cell_value(row, 3), # Authors
                 sheet.cell_value(row, 2), # Year
+                sheet.cell_value(row, 1), # Title
+                sheet.cell_value(row, 3), # Authors
                 sheet.cell_value(row, 9)] # Document Name
 
         line = parse_line(line)
@@ -186,8 +189,9 @@ def clean():
 
     outsheet.set_column(0, 0, 22) # Type column width 22 chars
     outsheet.set_column(1, 1, 8)  # Year column width 8 chars
-    outsheet.set_column(2, 2, 70) # Authors column width 70 chars
-    outsheet.set_column(3, 3, 80) # Document name column width 80 chars
+    outsheet.set_column(2, 2, 90) # Title column width 90 chars
+    outsheet.set_column(3, 3, 50) # Authors column width 50 chars
+    outsheet.set_column(4, 4, 80) # Document name column width 80 chars
 
     wb.release_resources()
     del wb
