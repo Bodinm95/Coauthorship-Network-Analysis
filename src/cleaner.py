@@ -10,6 +10,7 @@ EXCEL_OUTPUT = "../data/UB_cs_papers_cleaned.xlsx"
 PAPER_TYPES = {"Article", "Conference Paper", "Article in Press", "Review", "Book Chapter"}
 
 author_database = [] # list of all relevant authors
+paper_set = set() # set for skipping duplicate papers
 
 def init_database():
     global author_database
@@ -129,6 +130,8 @@ def parse_authors(authors):
     return ", ".join(fullnames)
 
 def parse_line(line):
+    global paper_set
+
     # Check paper type
     ptype = line[0]
     if ptype not in PAPER_TYPES:
@@ -137,6 +140,13 @@ def parse_line(line):
     year = line[2]
     title = line[3]
     docname = line[5]
+
+    # Check duplicate papers - leave duplicates that were published separately
+    paper = year + " " + title.lower() + " " + docname.lower()
+    if paper in paper_set:
+        return None
+    else:
+        paper_set.add(paper)
 
     # Parse main author
     main_author = parse_authors(re.sub("N/A", "", line[1]))
