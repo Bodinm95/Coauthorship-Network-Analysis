@@ -1,13 +1,16 @@
 import networkx as nx
 import xlrd
+from pathlib import Path
 
-EXCEL_AUTHORS = "../data/UB_cs_authors.xlsx"
-EXCEL_PAPERS = "../data/UB_cs_papers_cleaned.xlsx"
+FILE_DIR = Path(__file__).parent
 
-GRAPH_OUTPUT = "../results/authors_graph.gexf"
-ETF_OUTPUT = "../results/authors_graph_etf.gexf"
-MATF_OUTPUT = "../results/authors_graph_matf.gexf"
-FON_OUTPUT = "../results/authors_graph_fon.gexf"
+EXCEL_AUTHORS = (FILE_DIR/"../data/UB_cs_authors.xlsx").resolve()
+EXCEL_PAPERS = (FILE_DIR/"../data/UB_cs_papers_cleaned.xlsx").resolve()
+
+GRAPH_OUTPUT = (FILE_DIR/"../results/authors_graph.gexf").resolve()
+ETF_OUTPUT = (FILE_DIR/"../results/authors_graph_etf.gexf").resolve()
+MATF_OUTPUT = (FILE_DIR/"../results/authors_graph_matf.gexf").resolve()
+FON_OUTPUT = (FILE_DIR/"../results/authors_graph_fon.gexf").resolve()
 
 '''
 Coauthorship network graph information:
@@ -79,13 +82,13 @@ def create_graph():
     author_graph = nx.Graph()
     paper_set = set()
 
-    print("Initializing authors graph nodes: " + EXCEL_AUTHORS)
+    print("Initializing authors graph nodes: " + str(EXCEL_AUTHORS))
     init_nodes()
 
     wb = xlrd.open_workbook(EXCEL_PAPERS, on_demand = True)
     sheet = wb.sheet_by_index(0)
 
-    print("Initializing authors graph edges: " + EXCEL_PAPERS)
+    print("Initializing authors graph edges: " + str(EXCEL_PAPERS))
     for row in range(1, sheet.nrows):
         line = [sheet.cell_value(row, 0), # Type
                 sheet.cell_value(row, 1), # Year
@@ -103,7 +106,7 @@ def create_graph():
     print("Authors graph generated.")
 
     nx.write_gexf(author_graph, GRAPH_OUTPUT, prettyprint = True)
-    print("Authors graph written to: " + GRAPH_OUTPUT)
+    print("Authors graph written to: " + str(GRAPH_OUTPUT))
 
     wb.release_resources()
     del wb
@@ -121,7 +124,7 @@ def create_subgraphs():
                                        if attr['module'] in modules[i]]
         subgraph = author_graph.subgraph(nodes)
         nx.write_gexf(subgraph, outputs[i], prettyprint = True)
-        print(faculties[i] + " authors subgraph writen to: " + outputs[i])
+        print(faculties[i] + " authors subgraph writen to: " + str(outputs[i]))
 
 create_graph()
 create_subgraphs()

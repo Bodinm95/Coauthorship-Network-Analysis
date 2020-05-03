@@ -1,11 +1,14 @@
 import xlrd
 import xlsxwriter
 import re
+from pathlib import Path
 
-EXCEL_AUTHORS = "../data/UB_cs_authors.xlsx"
-EXCEL_PAPERS = "../data/UB_cs_papers_scopus.xlsx"
+FILE_DIR = Path(__file__).parent
 
-EXCEL_OUTPUT = "../data/UB_cs_papers_cleaned.xlsx"
+EXCEL_AUTHORS = (FILE_DIR/"../data/UB_cs_authors.xlsx").resolve()
+EXCEL_PAPERS = (FILE_DIR/"../data/UB_cs_papers_scopus.xlsx").resolve()
+
+EXCEL_OUTPUT = (FILE_DIR/"../data/UB_cs_papers_cleaned.xlsx").resolve()
 
 PAPER_TYPES = {"Article", "Conference Paper", "Article in Press", "Review", "Book Chapter"}
 
@@ -159,13 +162,13 @@ def parse_line(line):
     return [ptype, year, title, authors, docname]
 
 def clean():
-    print("Initializing author database: " + EXCEL_AUTHORS)
+    print("Initializing author database: " + str(EXCEL_AUTHORS))
     init_database()
 
     # Input
     wb = xlrd.open_workbook(EXCEL_PAPERS, on_demand = True)
     sheet = wb.sheet_by_index(0)
-    print("Reading papers data file: " + EXCEL_PAPERS)
+    print("Reading papers data file: " + str(EXCEL_PAPERS))
 
     # Output
     owb = xlsxwriter.Workbook(EXCEL_OUTPUT)
@@ -195,7 +198,7 @@ def clean():
         
         outsheet.write_row(outrow, 0, line)
         outrow += 1
-    print("Cleaned papers data written to: " + EXCEL_OUTPUT)
+    print("Cleaned papers data written to: " + str(EXCEL_OUTPUT))
 
     outsheet.set_column(0, 0, 22) # Type column width 22 chars
     outsheet.set_column(1, 1, 8)  # Year column width 8 chars

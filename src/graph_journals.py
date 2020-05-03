@@ -1,10 +1,13 @@
 import networkx as nx
 import xlrd
+from pathlib import Path
 
-EXCEL_AUTHORS = "../data/UB_cs_authors.xlsx"
-EXCEL_PAPERS = "../data/UB_cs_papers_cleaned.xlsx"
+FILE_DIR = Path(__file__).parent
 
-GRAPH_OUTPUT = "../results/journals_graph.gexf"
+EXCEL_AUTHORS = (FILE_DIR/"../data/UB_cs_authors.xlsx").resolve()
+EXCEL_PAPERS = (FILE_DIR/"../data/UB_cs_papers_cleaned.xlsx").resolve()
+
+GRAPH_OUTPUT = (FILE_DIR/"../results/journals_graph.gexf").resolve()
 
 PAPER_TYPES = {"Article", "Article in Press"}
 
@@ -84,10 +87,10 @@ def create_graph():
     global journal_graph
     journal_graph = nx.Graph()
 
-    print("Initializing author/journals database: " + EXCEL_AUTHORS)
+    print("Initializing author/journals database: " + str(EXCEL_AUTHORS))
     init_database()
 
-    print("Initializing journals graph nodes: " + EXCEL_PAPERS)
+    print("Initializing journals graph nodes: " + str(EXCEL_PAPERS))
     init_nodes()
 
     print("Initializing journals graph edges")
@@ -96,6 +99,6 @@ def create_graph():
 
     print("Journals graph generated.")
     nx.write_gexf(journal_graph, GRAPH_OUTPUT, prettyprint = True)
-    print("Journals graph written to: " + GRAPH_OUTPUT)
+    print("Journals graph written to: " + str(GRAPH_OUTPUT))
 
 create_graph()
