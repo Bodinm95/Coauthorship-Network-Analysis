@@ -5,6 +5,9 @@ EXCEL_AUTHORS = "../data/UB_cs_authors.xlsx"
 EXCEL_PAPERS = "../data/UB_cs_papers_cleaned.xlsx"
 
 GRAPH_OUTPUT = "../results/authors_graph.gexf"
+ETF_OUTPUT = "../results/authors_graph_etf.gexf"
+MATF_OUTPUT = "../results/authors_graph_matf.gexf"
+FON_OUTPUT = "../results/authors_graph_fon.gexf"
 
 '''
 Coauthorship network graph information:
@@ -105,4 +108,20 @@ def create_graph():
     wb.release_resources()
     del wb
 
+def create_subgraphs():
+    global author_graph
+
+    faculties = ["ETF", "MATF", "FON"]
+    modules = [{"ETF_RTI"}, {"MATF_RTI"}, {"FON_IT", "FON_IS", "FON_SI"}]
+    outputs = [ETF_OUTPUT, MATF_OUTPUT, FON_OUTPUT]
+
+    for i in range(len(faculties)):
+        print("\nGenerating " + faculties[i] + " authors subgraph")
+        nodes = [node for (node, attr) in author_graph.nodes(data = True)
+                                       if attr['module'] in modules[i]]
+        subgraph = author_graph.subgraph(nodes)
+        nx.write_gexf(subgraph, outputs[i], prettyprint = True)
+        print(faculties[i] + " authors subgraph writen to: " + outputs[i])
+
 create_graph()
+create_subgraphs()
