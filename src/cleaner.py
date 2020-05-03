@@ -99,13 +99,6 @@ def parse_name(name):
             return fullname
         name = name[:-3] # lastname name m. -> lastname name
 
-    # check format "name lastname" -> "lastname name"
-    if re.fullmatch(r"[a-z ]+ [a-z]+", name):
-        format = "{2} {0}"
-        fullname = search_name(name, format)
-        if fullname != None:
-            return fullname
-
     # check format "name middlename lastname" -> "lastname name m"
     if re.fullmatch(r"[a-z ]+ [a-z]+ [a-z]", name):
         format = "{2} {0} {3}"
