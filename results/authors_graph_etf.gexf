@@ -1,0 +1,403 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2020-05-04">
+    <creator>NetworkX 2.4</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="count" type="long" />
+      <attribute id="1" title="module" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Pavle Vuletic" label="Pavle Vuletic">
+        <attvalues>
+          <attvalue for="0" value="8" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Dragisa Miladinovic" label="Dragisa Miladinovic">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Slavko Gajin" label="Slavko Gajin">
+        <attvalues>
+          <attvalue for="0" value="12" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Jelica Cincovic" label="Jelica Cincovic">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Uros Radenkovic" label="Uros Radenkovic">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Zivojin Sustran" label="Zivojin Sustran">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Zoran Jovanovic" label="Zoran Jovanovic">
+        <attvalues>
+          <attvalue for="0" value="33" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Zarko Stanisavljevic" label="Zarko Stanisavljevic">
+        <attvalues>
+          <attvalue for="0" value="14" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Aleksandar Lazic" label="Aleksandar Lazic">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Marko Misic" label="Marko Misic">
+        <attvalues>
+          <attvalue for="0" value="16" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Dragan Milicev" label="Dragan Milicev">
+        <attvalues>
+          <attvalue for="0" value="22" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Jelica Protic" label="Jelica Protic">
+        <attvalues>
+          <attvalue for="0" value="31" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Dragan Bojic" label="Dragan Bojic">
+        <attvalues>
+          <attvalue for="0" value="23" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Tamara Sekularac" label="Tamara Sekularac">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Veljko Milutinovic" label="Veljko Milutinovic">
+        <attvalues>
+          <attvalue for="0" value="42" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Sanja Delcev" label="Sanja Delcev">
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Milana Prodanov" label="Milana Prodanov">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Marija Punt" label="Marija Punt">
+        <attvalues>
+          <attvalue for="0" value="12" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Jovan Djukic" label="Jovan Djukic">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Drazen Draskovic" label="Drazen Draskovic">
+        <attvalues>
+          <attvalue for="0" value="11" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Sanja Vranes" label="Sanja Vranes">
+        <attvalues>
+          <attvalue for="0" value="67" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Milo Tomasevic" label="Milo Tomasevic">
+        <attvalues>
+          <attvalue for="0" value="45" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Vladimir Jocovic" label="Vladimir Jocovic">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Danko Miladinovic" label="Danko Miladinovic">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Kristijan Ziza" label="Kristijan Ziza">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Miroslav Bojovic" label="Miroslav Bojovic">
+        <attvalues>
+          <attvalue for="0" value="15" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Maja Vukasovic" label="Maja Vukasovic">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Igor Tartalja" label="Igor Tartalja">
+        <attvalues>
+          <attvalue for="0" value="20" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Nenad Korolija" label="Nenad Korolija">
+        <attvalues>
+          <attvalue for="0" value="10" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Zaharije Radivojevic" label="Zaharije Radivojevic">
+        <attvalues>
+          <attvalue for="0" value="16" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Milos Cvetanovic" label="Milos Cvetanovic">
+        <attvalues>
+          <attvalue for="0" value="14" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Djordje Djurdjevic" label="Djordje Djurdjevic">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Katarina Milenkovic" label="Katarina Milenkovic">
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Stefan Tubic" label="Stefan Tubic">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Marko Micovic" label="Marko Micovic">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Sasa Stojanovic" label="Sasa Stojanovic">
+        <attvalues>
+          <attvalue for="0" value="13" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Bosko Nikolic" label="Bosko Nikolic">
+        <attvalues>
+          <attvalue for="0" value="34" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Dragana Milovancevic" label="Dragana Milovancevic">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Nemanja Kojic" label="Nemanja Kojic">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+      <node id="Filip Hadzic" label="Filip Hadzic">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="ETF_RTI" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Pavle Vuletic" target="Dragan Bojic" id="0" weight="1" />
+      <edge source="Pavle Vuletic" target="Miroslav Bojovic" id="1" weight="1" />
+      <edge source="Pavle Vuletic" target="Milos Cvetanovic" id="2" weight="1" />
+      <edge source="Pavle Vuletic" target="Slavko Gajin" id="3" weight="1" />
+      <edge source="Pavle Vuletic" target="Zoran Jovanovic" id="4" weight="2" />
+      <edge source="Pavle Vuletic" target="Dragan Milicev" id="5" weight="1" />
+      <edge source="Pavle Vuletic" target="Veljko Milutinovic" id="6" weight="1" />
+      <edge source="Pavle Vuletic" target="Bosko Nikolic" id="7" weight="1" />
+      <edge source="Pavle Vuletic" target="Jelica Protic" id="8" weight="2" />
+      <edge source="Pavle Vuletic" target="Marija Punt" id="9" weight="1" />
+      <edge source="Pavle Vuletic" target="Zaharije Radivojevic" id="10" weight="1" />
+      <edge source="Pavle Vuletic" target="Zarko Stanisavljevic" id="11" weight="3" />
+      <edge source="Pavle Vuletic" target="Sasa Stojanovic" id="12" weight="1" />
+      <edge source="Pavle Vuletic" target="Igor Tartalja" id="13" weight="1" />
+      <edge source="Pavle Vuletic" target="Milo Tomasevic" id="14" weight="1" />
+      <edge source="Slavko Gajin" target="Dragan Bojic" id="15" weight="1" />
+      <edge source="Slavko Gajin" target="Miroslav Bojovic" id="16" weight="1" />
+      <edge source="Slavko Gajin" target="Milos Cvetanovic" id="17" weight="1" />
+      <edge source="Slavko Gajin" target="Zoran Jovanovic" id="18" weight="4" />
+      <edge source="Slavko Gajin" target="Dragan Milicev" id="19" weight="1" />
+      <edge source="Slavko Gajin" target="Veljko Milutinovic" id="20" weight="1" />
+      <edge source="Slavko Gajin" target="Bosko Nikolic" id="21" weight="1" />
+      <edge source="Slavko Gajin" target="Jelica Protic" id="22" weight="1" />
+      <edge source="Slavko Gajin" target="Marija Punt" id="23" weight="1" />
+      <edge source="Slavko Gajin" target="Zaharije Radivojevic" id="24" weight="1" />
+      <edge source="Slavko Gajin" target="Zarko Stanisavljevic" id="25" weight="1" />
+      <edge source="Slavko Gajin" target="Sasa Stojanovic" id="26" weight="1" />
+      <edge source="Slavko Gajin" target="Igor Tartalja" id="27" weight="1" />
+      <edge source="Slavko Gajin" target="Milo Tomasevic" id="28" weight="1" />
+      <edge source="Slavko Gajin" target="Marko Misic" id="29" weight="1" />
+      <edge source="Zivojin Sustran" target="Sasa Stojanovic" id="30" weight="1" />
+      <edge source="Zivojin Sustran" target="Veljko Milutinovic" id="31" weight="3" />
+      <edge source="Zoran Jovanovic" target="Dragan Bojic" id="32" weight="1" />
+      <edge source="Zoran Jovanovic" target="Miroslav Bojovic" id="33" weight="1" />
+      <edge source="Zoran Jovanovic" target="Milos Cvetanovic" id="34" weight="2" />
+      <edge source="Zoran Jovanovic" target="Dragan Milicev" id="35" weight="5" />
+      <edge source="Zoran Jovanovic" target="Veljko Milutinovic" id="36" weight="2" />
+      <edge source="Zoran Jovanovic" target="Bosko Nikolic" id="37" weight="1" />
+      <edge source="Zoran Jovanovic" target="Jelica Protic" id="38" weight="1" />
+      <edge source="Zoran Jovanovic" target="Marija Punt" id="39" weight="1" />
+      <edge source="Zoran Jovanovic" target="Zaharije Radivojevic" id="40" weight="2" />
+      <edge source="Zoran Jovanovic" target="Zarko Stanisavljevic" id="41" weight="2" />
+      <edge source="Zoran Jovanovic" target="Sasa Stojanovic" id="42" weight="1" />
+      <edge source="Zoran Jovanovic" target="Igor Tartalja" id="43" weight="1" />
+      <edge source="Zoran Jovanovic" target="Milo Tomasevic" id="44" weight="1" />
+      <edge source="Zarko Stanisavljevic" target="Dragan Bojic" id="45" weight="1" />
+      <edge source="Zarko Stanisavljevic" target="Miroslav Bojovic" id="46" weight="1" />
+      <edge source="Zarko Stanisavljevic" target="Milos Cvetanovic" id="47" weight="1" />
+      <edge source="Zarko Stanisavljevic" target="Dragan Milicev" id="48" weight="1" />
+      <edge source="Zarko Stanisavljevic" target="Veljko Milutinovic" id="49" weight="2" />
+      <edge source="Zarko Stanisavljevic" target="Bosko Nikolic" id="50" weight="5" />
+      <edge source="Zarko Stanisavljevic" target="Jelica Protic" id="51" weight="1" />
+      <edge source="Zarko Stanisavljevic" target="Marija Punt" id="52" weight="2" />
+      <edge source="Zarko Stanisavljevic" target="Zaharije Radivojevic" id="53" weight="2" />
+      <edge source="Zarko Stanisavljevic" target="Sasa Stojanovic" id="54" weight="1" />
+      <edge source="Zarko Stanisavljevic" target="Igor Tartalja" id="55" weight="2" />
+      <edge source="Zarko Stanisavljevic" target="Milo Tomasevic" id="56" weight="1" />
+      <edge source="Zarko Stanisavljevic" target="Maja Vukasovic" id="57" weight="1" />
+      <edge source="Zarko Stanisavljevic" target="Katarina Milenkovic" id="58" weight="1" />
+      <edge source="Zarko Stanisavljevic" target="Drazen Draskovic" id="59" weight="2" />
+      <edge source="Zarko Stanisavljevic" target="Marko Misic" id="60" weight="2" />
+      <edge source="Marko Misic" target="Veljko Milutinovic" id="61" weight="1" />
+      <edge source="Marko Misic" target="Drazen Draskovic" id="62" weight="3" />
+      <edge source="Marko Misic" target="Jelica Protic" id="63" weight="5" />
+      <edge source="Marko Misic" target="Milo Tomasevic" id="64" weight="9" />
+      <edge source="Dragan Milicev" target="Dragan Bojic" id="65" weight="1" />
+      <edge source="Dragan Milicev" target="Miroslav Bojovic" id="66" weight="1" />
+      <edge source="Dragan Milicev" target="Milos Cvetanovic" id="67" weight="1" />
+      <edge source="Dragan Milicev" target="Veljko Milutinovic" id="68" weight="3" />
+      <edge source="Dragan Milicev" target="Bosko Nikolic" id="69" weight="1" />
+      <edge source="Dragan Milicev" target="Jelica Protic" id="70" weight="2" />
+      <edge source="Dragan Milicev" target="Marija Punt" id="71" weight="1" />
+      <edge source="Dragan Milicev" target="Zaharije Radivojevic" id="72" weight="1" />
+      <edge source="Dragan Milicev" target="Sasa Stojanovic" id="73" weight="1" />
+      <edge source="Dragan Milicev" target="Igor Tartalja" id="74" weight="2" />
+      <edge source="Dragan Milicev" target="Milo Tomasevic" id="75" weight="2" />
+      <edge source="Dragan Milicev" target="Nemanja Kojic" id="76" weight="2" />
+      <edge source="Jelica Protic" target="Dragan Bojic" id="77" weight="4" />
+      <edge source="Jelica Protic" target="Miroslav Bojovic" id="78" weight="1" />
+      <edge source="Jelica Protic" target="Milos Cvetanovic" id="79" weight="2" />
+      <edge source="Jelica Protic" target="Veljko Milutinovic" id="80" weight="10" />
+      <edge source="Jelica Protic" target="Bosko Nikolic" id="81" weight="1" />
+      <edge source="Jelica Protic" target="Marija Punt" id="82" weight="1" />
+      <edge source="Jelica Protic" target="Zaharije Radivojevic" id="83" weight="2" />
+      <edge source="Jelica Protic" target="Sasa Stojanovic" id="84" weight="1" />
+      <edge source="Jelica Protic" target="Igor Tartalja" id="85" weight="8" />
+      <edge source="Jelica Protic" target="Milo Tomasevic" id="86" weight="6" />
+      <edge source="Dragan Bojic" target="Miroslav Bojovic" id="87" weight="5" />
+      <edge source="Dragan Bojic" target="Milos Cvetanovic" id="88" weight="1" />
+      <edge source="Dragan Bojic" target="Veljko Milutinovic" id="89" weight="4" />
+      <edge source="Dragan Bojic" target="Bosko Nikolic" id="90" weight="1" />
+      <edge source="Dragan Bojic" target="Marija Punt" id="91" weight="1" />
+      <edge source="Dragan Bojic" target="Zaharije Radivojevic" id="92" weight="1" />
+      <edge source="Dragan Bojic" target="Sasa Stojanovic" id="93" weight="4" />
+      <edge source="Dragan Bojic" target="Igor Tartalja" id="94" weight="5" />
+      <edge source="Dragan Bojic" target="Milo Tomasevic" id="95" weight="2" />
+      <edge source="Dragan Bojic" target="Nenad Korolija" id="96" weight="4" />
+      <edge source="Veljko Milutinovic" target="Drazen Draskovic" id="97" weight="3" />
+      <edge source="Veljko Milutinovic" target="Miroslav Bojovic" id="98" weight="2" />
+      <edge source="Veljko Milutinovic" target="Milos Cvetanovic" id="99" weight="3" />
+      <edge source="Veljko Milutinovic" target="Bosko Nikolic" id="100" weight="6" />
+      <edge source="Veljko Milutinovic" target="Marija Punt" id="101" weight="2" />
+      <edge source="Veljko Milutinovic" target="Zaharije Radivojevic" id="102" weight="4" />
+      <edge source="Veljko Milutinovic" target="Sasa Stojanovic" id="103" weight="5" />
+      <edge source="Veljko Milutinovic" target="Igor Tartalja" id="104" weight="8" />
+      <edge source="Veljko Milutinovic" target="Milo Tomasevic" id="105" weight="11" />
+      <edge source="Veljko Milutinovic" target="Nenad Korolija" id="106" weight="4" />
+      <edge source="Veljko Milutinovic" target="Nemanja Kojic" id="107" weight="1" />
+      <edge source="Sanja Delcev" target="Maja Vukasovic" id="108" weight="1" />
+      <edge source="Sanja Delcev" target="Drazen Draskovic" id="109" weight="1" />
+      <edge source="Sanja Delcev" target="Bosko Nikolic" id="110" weight="1" />
+      <edge source="Marija Punt" target="Miroslav Bojovic" id="111" weight="1" />
+      <edge source="Marija Punt" target="Milos Cvetanovic" id="112" weight="2" />
+      <edge source="Marija Punt" target="Bosko Nikolic" id="113" weight="1" />
+      <edge source="Marija Punt" target="Zaharije Radivojevic" id="114" weight="3" />
+      <edge source="Marija Punt" target="Sasa Stojanovic" id="115" weight="2" />
+      <edge source="Marija Punt" target="Igor Tartalja" id="116" weight="1" />
+      <edge source="Marija Punt" target="Milo Tomasevic" id="117" weight="3" />
+      <edge source="Marija Punt" target="Nenad Korolija" id="118" weight="1" />
+      <edge source="Drazen Draskovic" target="Bosko Nikolic" id="119" weight="5" />
+      <edge source="Drazen Draskovic" target="Maja Vukasovic" id="120" weight="1" />
+      <edge source="Milo Tomasevic" target="Miroslav Bojovic" id="121" weight="5" />
+      <edge source="Milo Tomasevic" target="Milos Cvetanovic" id="122" weight="1" />
+      <edge source="Milo Tomasevic" target="Bosko Nikolic" id="123" weight="1" />
+      <edge source="Milo Tomasevic" target="Zaharije Radivojevic" id="124" weight="1" />
+      <edge source="Milo Tomasevic" target="Sasa Stojanovic" id="125" weight="1" />
+      <edge source="Milo Tomasevic" target="Igor Tartalja" id="126" weight="3" />
+      <edge source="Miroslav Bojovic" target="Milos Cvetanovic" id="127" weight="3" />
+      <edge source="Miroslav Bojovic" target="Bosko Nikolic" id="128" weight="1" />
+      <edge source="Miroslav Bojovic" target="Zaharije Radivojevic" id="129" weight="3" />
+      <edge source="Miroslav Bojovic" target="Sasa Stojanovic" id="130" weight="3" />
+      <edge source="Miroslav Bojovic" target="Igor Tartalja" id="131" weight="1" />
+      <edge source="Miroslav Bojovic" target="Nenad Korolija" id="132" weight="1" />
+      <edge source="Maja Vukasovic" target="Bosko Nikolic" id="133" weight="1" />
+      <edge source="Igor Tartalja" target="Milos Cvetanovic" id="134" weight="1" />
+      <edge source="Igor Tartalja" target="Bosko Nikolic" id="135" weight="2" />
+      <edge source="Igor Tartalja" target="Zaharije Radivojevic" id="136" weight="1" />
+      <edge source="Igor Tartalja" target="Sasa Stojanovic" id="137" weight="1" />
+      <edge source="Nenad Korolija" target="Milos Cvetanovic" id="138" weight="2" />
+      <edge source="Nenad Korolija" target="Sasa Stojanovic" id="139" weight="1" />
+      <edge source="Nenad Korolija" target="Zaharije Radivojevic" id="140" weight="1" />
+      <edge source="Zaharije Radivojevic" target="Milos Cvetanovic" id="141" weight="13" />
+      <edge source="Zaharije Radivojevic" target="Bosko Nikolic" id="142" weight="2" />
+      <edge source="Zaharije Radivojevic" target="Sasa Stojanovic" id="143" weight="5" />
+      <edge source="Milos Cvetanovic" target="Bosko Nikolic" id="144" weight="1" />
+      <edge source="Milos Cvetanovic" target="Sasa Stojanovic" id="145" weight="5" />
+      <edge source="Sasa Stojanovic" target="Bosko Nikolic" id="146" weight="1" />
+    </edges>
+  </graph>
+</gexf>

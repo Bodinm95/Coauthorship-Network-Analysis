@@ -1,0 +1,310 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2020-05-04">
+    <creator>NetworkX 2.4</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="count" type="long" />
+      <attribute id="1" title="module" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Ilija Antovic" label="Ilija Antovic">
+        <attvalues>
+          <attvalue for="0" value="11" />
+          <attvalue for="1" value="FON_SI" />
+        </attvalues>
+      </node>
+      <node id="Zoran Sevarac" label="Zoran Sevarac">
+        <attvalues>
+          <attvalue for="0" value="8" />
+          <attvalue for="1" value="FON_SI" />
+        </attvalues>
+      </node>
+      <node id="Nikola Milikic" label="Nikola Milikic">
+        <attvalues>
+          <attvalue for="0" value="9" />
+          <attvalue for="1" value="FON_SI" />
+        </attvalues>
+      </node>
+      <node id="Jelena Ljubenovic" label="Jelena Ljubenovic">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="FON_IS" />
+        </attvalues>
+      </node>
+      <node id="Nina Turajlic" label="Nina Turajlic">
+        <attvalues>
+          <attvalue for="0" value="9" />
+          <attvalue for="1" value="FON_IS" />
+        </attvalues>
+      </node>
+      <node id="Ana Pajic" label="Ana Pajic">
+        <attvalues>
+          <attvalue for="0" value="4" />
+          <attvalue for="1" value="FON_IS" />
+        </attvalues>
+      </node>
+      <node id="Dejan Stojimirovic" label="Dejan Stojimirovic">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="FON_IS" />
+        </attvalues>
+      </node>
+      <node id="Uros Sosevic" label="Uros Sosevic">
+        <attvalues>
+          <attvalue for="0" value="6" />
+          <attvalue for="1" value="FON_IT" />
+        </attvalues>
+      </node>
+      <node id="Miroslav Minovic" label="Miroslav Minovic">
+        <attvalues>
+          <attvalue for="0" value="46" />
+          <attvalue for="1" value="FON_IT" />
+        </attvalues>
+      </node>
+      <node id="Sinisa Neskovic" label="Sinisa Neskovic">
+        <attvalues>
+          <attvalue for="0" value="11" />
+          <attvalue for="1" value="FON_IS" />
+        </attvalues>
+      </node>
+      <node id="Sofija Prokic" label="Sofija Prokic">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="FON_IS" />
+        </attvalues>
+      </node>
+      <node id="Mina Marjanovic" label="Mina Marjanovic">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="FON_IT" />
+        </attvalues>
+      </node>
+      <node id="Dusan Starcevic" label="Dusan Starcevic">
+        <attvalues>
+          <attvalue for="0" value="57" />
+          <attvalue for="1" value="FON_IT" />
+        </attvalues>
+      </node>
+      <node id="Elena Milovanovic" label="Elena Milovanovic">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="FON_IS" />
+        </attvalues>
+      </node>
+      <node id="Dusan Savic" label="Dusan Savic">
+        <attvalues>
+          <attvalue for="0" value="12" />
+          <attvalue for="1" value="FON_SI" />
+        </attvalues>
+      </node>
+      <node id="Sasa Lazarevic" label="Sasa Lazarevic">
+        <attvalues>
+          <attvalue for="0" value="9" />
+          <attvalue for="1" value="FON_SI" />
+        </attvalues>
+      </node>
+      <node id="Marko Petrovic" label="Marko Petrovic">
+        <attvalues>
+          <attvalue for="0" value="13" />
+          <attvalue for="1" value="FON_IS" />
+        </attvalues>
+      </node>
+      <node id="Sinisa Vlajic" label="Sinisa Vlajic">
+        <attvalues>
+          <attvalue for="0" value="14" />
+          <attvalue for="1" value="FON_SI" />
+        </attvalues>
+      </node>
+      <node id="Milos Milovanovic" label="Milos Milovanovic">
+        <attvalues>
+          <attvalue for="0" value="39" />
+          <attvalue for="1" value="FON_IT" />
+        </attvalues>
+      </node>
+      <node id="Andela Pejanovic" label="Andela Pejanovic">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="FON_IS" />
+        </attvalues>
+      </node>
+      <node id="Vidan Markovic" label="Vidan Markovic">
+        <attvalues>
+          <attvalue for="0" value="5" />
+          <attvalue for="1" value="FON_IS" />
+        </attvalues>
+      </node>
+      <node id="Zoran Marjanovic" label="Zoran Marjanovic">
+        <attvalues>
+          <attvalue for="0" value="15" />
+          <attvalue for="1" value="FON_IS" />
+        </attvalues>
+      </node>
+      <node id="Bojan Tomic" label="Bojan Tomic">
+        <attvalues>
+          <attvalue for="0" value="6" />
+          <attvalue for="1" value="FON_SI" />
+        </attvalues>
+      </node>
+      <node id="Vladan Devedzic" label="Vladan Devedzic">
+        <attvalues>
+          <attvalue for="0" value="137" />
+          <attvalue for="1" value="FON_SI" />
+        </attvalues>
+      </node>
+      <node id="Ivan Milenkovic" label="Ivan Milenkovic">
+        <attvalues>
+          <attvalue for="0" value="10" />
+          <attvalue for="1" value="FON_IT" />
+        </attvalues>
+      </node>
+      <node id="Ognjen Pantelic" label="Ognjen Pantelic">
+        <attvalues>
+          <attvalue for="0" value="4" />
+          <attvalue for="1" value="FON_IS" />
+        </attvalues>
+      </node>
+      <node id="Srdja Bjeladinovic" label="Srdja Bjeladinovic">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="FON_IS" />
+        </attvalues>
+      </node>
+      <node id="Marija Bogicevic Sretenovic" label="Marija Bogicevic Sretenovic">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="FON_IT" />
+        </attvalues>
+      </node>
+      <node id="Dejan Simic" label="Dejan Simic">
+        <attvalues>
+          <attvalue for="0" value="25" />
+          <attvalue for="1" value="FON_IT" />
+        </attvalues>
+      </node>
+      <node id="Nenad Anicic" label="Nenad Anicic">
+        <attvalues>
+          <attvalue for="0" value="9" />
+          <attvalue for="1" value="FON_IS" />
+        </attvalues>
+      </node>
+      <node id="Milos Zlatkovic" label="Milos Zlatkovic">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="FON_IS" />
+        </attvalues>
+      </node>
+      <node id="Marina Jovanovic Milenkovic" label="Marina Jovanovic Milenkovic">
+        <attvalues>
+          <attvalue for="0" value="14" />
+          <attvalue for="1" value="FON_IT" />
+        </attvalues>
+      </node>
+      <node id="Milos Milic" label="Milos Milic">
+        <attvalues>
+          <attvalue for="0" value="9" />
+          <attvalue for="1" value="FON_SI" />
+        </attvalues>
+      </node>
+      <node id="Sladjan Babarogic" label="Sladjan Babarogic">
+        <attvalues>
+          <attvalue for="0" value="7" />
+          <attvalue for="1" value="FON_IS" />
+        </attvalues>
+      </node>
+      <node id="Jelena Jovanovic" label="Jelena Jovanovic">
+        <attvalues>
+          <attvalue for="0" value="106" />
+          <attvalue for="1" value="FON_SI" />
+        </attvalues>
+      </node>
+      <node id="Tatjana Stojanovic" label="Tatjana Stojanovic">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="FON_SI" />
+        </attvalues>
+      </node>
+      <node id="Dragan Djuric" label="Dragan Djuric">
+        <attvalues>
+          <attvalue for="0" value="23" />
+          <attvalue for="1" value="FON_SI" />
+        </attvalues>
+      </node>
+      <node id="Bojan Marceta" label="Bojan Marceta">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="FON_IT" />
+        </attvalues>
+      </node>
+      <node id="Milica Vuckovic" label="Milica Vuckovic">
+        <attvalues>
+          <attvalue for="0" value="6" />
+          <attvalue for="1" value="FON_IS" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Ilija Antovic" target="Milos Milic" id="0" weight="8" />
+      <edge source="Ilija Antovic" target="Sinisa Vlajic" id="1" weight="9" />
+      <edge source="Ilija Antovic" target="Dusan Savic" id="2" weight="9" />
+      <edge source="Ilija Antovic" target="Sasa Lazarevic" id="3" weight="6" />
+      <edge source="Zoran Sevarac" target="Bojan Tomic" id="4" weight="2" />
+      <edge source="Zoran Sevarac" target="Jelena Jovanovic" id="5" weight="4" />
+      <edge source="Zoran Sevarac" target="Nikola Milikic" id="6" weight="2" />
+      <edge source="Zoran Sevarac" target="Vladan Devedzic" id="7" weight="4" />
+      <edge source="Nikola Milikic" target="Jelena Jovanovic" id="8" weight="9" />
+      <edge source="Nikola Milikic" target="Vladan Devedzic" id="9" weight="3" />
+      <edge source="Nikola Milikic" target="Bojan Tomic" id="10" weight="2" />
+      <edge source="Nina Turajlic" target="Marko Petrovic" id="11" weight="4" />
+      <edge source="Nina Turajlic" target="Milica Vuckovic" id="12" weight="4" />
+      <edge source="Nina Turajlic" target="Sladjan Babarogic" id="13" weight="1" />
+      <edge source="Nina Turajlic" target="Nenad Anicic" id="14" weight="1" />
+      <edge source="Nina Turajlic" target="Zoran Marjanovic" id="15" weight="3" />
+      <edge source="Nina Turajlic" target="Sinisa Neskovic" id="16" weight="1" />
+      <edge source="Ana Pajic" target="Ognjen Pantelic" id="17" weight="3" />
+      <edge source="Uros Sosevic" target="Miroslav Minovic" id="18" weight="3" />
+      <edge source="Uros Sosevic" target="Milos Milovanovic" id="19" weight="4" />
+      <edge source="Uros Sosevic" target="Ivan Milenkovic" id="20" weight="4" />
+      <edge source="Miroslav Minovic" target="Milos Milovanovic" id="21" weight="34" />
+      <edge source="Miroslav Minovic" target="Dejan Simic" id="22" weight="1" />
+      <edge source="Miroslav Minovic" target="Dusan Starcevic" id="23" weight="22" />
+      <edge source="Miroslav Minovic" target="Ivan Milenkovic" id="24" weight="4" />
+      <edge source="Sinisa Neskovic" target="Nenad Anicic" id="25" weight="2" />
+      <edge source="Sinisa Neskovic" target="Milica Vuckovic" id="26" weight="2" />
+      <edge source="Sinisa Neskovic" target="Sladjan Babarogic" id="27" weight="1" />
+      <edge source="Dusan Starcevic" target="Milos Milovanovic" id="28" weight="19" />
+      <edge source="Dusan Starcevic" target="Dejan Simic" id="29" weight="4" />
+      <edge source="Dusan Starcevic" target="Ivan Milenkovic" id="30" weight="4" />
+      <edge source="Dusan Savic" target="Milos Milic" id="31" weight="8" />
+      <edge source="Dusan Savic" target="Sinisa Vlajic" id="32" weight="11" />
+      <edge source="Dusan Savic" target="Sasa Lazarevic" id="33" weight="6" />
+      <edge source="Dusan Savic" target="Dejan Simic" id="34" weight="2" />
+      <edge source="Sasa Lazarevic" target="Milos Milic" id="35" weight="6" />
+      <edge source="Sasa Lazarevic" target="Sinisa Vlajic" id="36" weight="6" />
+      <edge source="Marko Petrovic" target="Milica Vuckovic" id="37" weight="4" />
+      <edge source="Marko Petrovic" target="Sladjan Babarogic" id="38" weight="1" />
+      <edge source="Marko Petrovic" target="Nenad Anicic" id="39" weight="1" />
+      <edge source="Marko Petrovic" target="Zoran Marjanovic" id="40" weight="3" />
+      <edge source="Marko Petrovic" target="Vidan Markovic" id="41" weight="3" />
+      <edge source="Sinisa Vlajic" target="Milos Milic" id="42" weight="9" />
+      <edge source="Sinisa Vlajic" target="Dejan Simic" id="43" weight="1" />
+      <edge source="Milos Milovanovic" target="Dejan Simic" id="44" weight="2" />
+      <edge source="Milos Milovanovic" target="Ivan Milenkovic" id="45" weight="3" />
+      <edge source="Zoran Marjanovic" target="Milica Vuckovic" id="46" weight="3" />
+      <edge source="Zoran Marjanovic" target="Sladjan Babarogic" id="47" weight="1" />
+      <edge source="Zoran Marjanovic" target="Nenad Anicic" id="48" weight="4" />
+      <edge source="Zoran Marjanovic" target="Srdja Bjeladinovic" id="49" weight="1" />
+      <edge source="Bojan Tomic" target="Jelena Jovanovic" id="50" weight="3" />
+      <edge source="Bojan Tomic" target="Vladan Devedzic" id="51" weight="3" />
+      <edge source="Vladan Devedzic" target="Jelena Jovanovic" id="52" weight="34" />
+      <edge source="Vladan Devedzic" target="Dragan Djuric" id="53" weight="17" />
+      <edge source="Ivan Milenkovic" target="Dejan Simic" id="54" weight="2" />
+      <edge source="Ognjen Pantelic" target="Sladjan Babarogic" id="55" weight="1" />
+      <edge source="Nenad Anicic" target="Milica Vuckovic" id="56" weight="3" />
+      <edge source="Nenad Anicic" target="Sladjan Babarogic" id="57" weight="3" />
+      <edge source="Sladjan Babarogic" target="Milica Vuckovic" id="58" weight="1" />
+      <edge source="Jelena Jovanovic" target="Dragan Djuric" id="59" weight="1" />
+    </edges>
+  </graph>
+</gexf>
