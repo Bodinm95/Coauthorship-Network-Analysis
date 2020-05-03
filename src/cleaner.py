@@ -61,16 +61,18 @@ def search_name(name, format):
     return None
 
 def parse_name(name):
+    # name normalization
     name = name.lower()
-    name = name.replace("š", "s").replace("đ", "dj").replace("č", "c").replace("ć", "c").replace("ž", "z")
+    # trim diacritical marks
     name = re.sub("[àáâǎãäåăā]", "a", name);
     name = re.sub("[èéêëėęěĕē]", "e", name);
     name = re.sub("[ìíîï]", "i", name);
     name = re.sub("[òóôǒõöōŏő]", "o", name);
     name = re.sub("[ùúûüũūŭůűǔ]", "u", name);
-    name = re.sub("[śŝşš]", "s", name);
-    name = re.sub("[ċĉć]", "c", name);
-    name = re.sub("[źżž]", "z", name);
+    name = re.sub("[šśŝş]", "s", name);
+    name = re.sub("[đð]", "dj", name);
+    name = re.sub("[čćĉċ]", "c", name);
+    name = re.sub("[žźż]", "z", name);
 
     name = name.replace(",", "") # char ',' interferes with binary search and string comparison
 
