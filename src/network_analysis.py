@@ -13,9 +13,18 @@ FON_INPUT = (FILE_DIR/"../results/authors_graph_fon.gexf").resolve()
 
 EXCEL_AUTHORS = (FILE_DIR/"../results/analysis_authors.xlsx").resolve()
 EXCEL_MODULES = (FILE_DIR/"../results/analysis_modules.xlsx").resolve()
+EXCEL_JOURNALS = (FILE_DIR/"../results/analysis_journals.xlsx").resolve()
 
 ARTICLE_TYPES = {"Article", "Article in Press"}
 CONFERENCE_TYPES = {"Conference Paper"}
+
+PAPER_TYPE_PRIORITY = {
+    "Conference Paper" : 0,
+    "Article" : 1,
+    "Article in Press" : 2,
+    "Review" : 3,
+    "Book Chapter" : 4
+}
 
 """
 Coauthorship network graphs analysis.
@@ -267,5 +276,134 @@ def modules_analysis():
     wb.close()
     del wb
 
+"""
+Analysis of scientific paper publishing in journals and at conferences.
+Publishing is analyized separately for journals, conferences and all document types together.
+
+For each journal/conference the following information is listed:
+- Document type
+- Number of papers published in it
+- Total number of published paper authors
+- Average number of authors per published paper
+
+Additionally average number of authors per paper is calculated for each publishing type.
+Results are written to the separate worksheets for each publishing type inside the Excel file.
+"""
+def journals_analysis():
+    print("\nInitializing journal/conference publishing analysis")
+    database = dict() # document database
+
+    # Input
+    wb = xlrd.open_workbook(EXCEL_PAPERS, on_demand = True)
+    sheet = wb.sheet_by_index(0)
+
+    print("Reading papers data file: " + str(EXCEL_PAPERS))
+    for row in range(1, sheet.nrows):
+        ptype = sheet.cell_value(row, 0)
+        authors = sheet.cell_value(row, 3).split(", ")
+        docname = sheet.cell_value(row, 4).title()
+
+        if docname == "":
+            continue
+
+        # get document database entry, or initialize it with empty dict
+        doc_entry = database.get(docname, {'types' : dict(), 'papers' : 0, 'authors' : 0})
+        doc_entry['types'][ptype] = doc_entry['types'].get(ptype, 0) + 1
+        doc_entry['papers'] += 1
+        doc_entry['authors'] += len(authors)
+        database[docname] = doc_entry
+
+    wb.release_resources()
+    del wb
+
+    # Output
+    wb = xlsxwriter.Workbook(EXCEL_JOURNALS)
+    sheet_d = wb.add_worksheet("Sva dokumenta")
+    sheet_j = wb.add_worksheet("Časopisi")
+    sheet_c = wb.add_worksheet("Konferencije")
+
+    # sort documents by paper count
+    doc_list = sorted(database.items(),
+                      key = lambda item : item[1]['papers'], reverse = True)
+
+    total_papers_d = total_papers_c = total_papers_j = 0
+    total_authors_d = total_authors_c = total_authors_j = 0
+    row_d = row_c = row_j = 1
+
+    print("Creating publishing data tables.")
+    for doc_entry in doc_list:
+        name = doc_entry[0]
+        types = doc_entry[1]['types']
+        papers = doc_entry[1]['papers']
+        authors = doc_entry[1]['authors']
+        avg_authors = authors / papers
+
+        # document type is the most occuring paper type
+        # for multiple types priority is defined in PAPER_TYPE_PRIORITY dict
+        types = [ptype for (ptype, cnt) in types.items() if cnt == max(types.values())]
+        types = sorted(types, key = lambda ptype : PAPER_TYPE_PRIORITY[ptype])
+        doctype = types[0]
+
+        line = [name, doctype, papers, authors, "{:.2f}".format(avg_authors)]
+
+        # documents sheet
+        sheet_d.write_row(row_d, 0, line)
+        row_d += 1
+        total_papers_d += papers
+        total_authors_d += authors
+
+        # conferences sheet
+        if doctype in CONFERENCE_TYPES:
+            sheet_c.write_row(row_c, 0, line)
+            row_c += 1
+            total_papers_c += papers
+            total_authors_c += authors
+
+        # journals sheet
+        elif doctype in ARTICLE_TYPES:
+            sheet_j.write_row(row_j, 0, line)
+            row_j += 1
+            total_papers_j += papers
+            total_authors_j += authors
+
+    # calculate total author per paper averages
+    document_avg = total_authors_d / total_papers_d
+    conference_avg = total_authors_c / total_papers_c
+    journal_avg = total_authors_j / total_papers_j
+
+    # sheet column header arguments
+    column_args = [
+        ["{0}", 55, {'align' : "left"}],
+        ["Tip rada", 20, {'align' : "right"}],
+        ["Broj radova", 15, {'align' : "center"}],
+        ["Broj autora", 12, {'align' : "center"}],
+        ["Prosečan broj autora po radu", 28, {'align' : "center"}],
+        ["Prosečan broj autora po {1}", 38, {'align' : "center"}]
+    ]
+    # first and last column text depends on specific sheet
+    first_column = ["Dokument", "Časopis", "Konferencija"]
+    last_column  = ["svim radovima", "časopisima", "konferencijama"]
+
+    sheets = [sheet_d, sheet_j, sheet_c]
+    averages = [document_avg, journal_avg, conference_avg]
+
+    for i in range(0, len(sheets)):
+        # set column headers, widths and formats
+        for col in range (0, len(column_args)):
+            header = column_args[col][0].format(first_column[i], last_column[i])
+            width = column_args[col][1]
+            cell_format = wb.add_format(column_args[col][2])
+
+            sheets[i].write(0, col, header)
+            sheets[i].set_column(col, col, width, cell_format)
+
+        # write total average
+        sheets[i].write(1, len(column_args) - 1, averages[i])
+
+    print("Analysis results written to Excel file: " + str(EXCEL_JOURNALS))
+    wb.close()
+    del wb
+
 authors_analysis()
 modules_analysis()
+journals_analysis()
